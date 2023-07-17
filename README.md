@@ -52,6 +52,10 @@ Create an instance  (in interface builder or programmatically) of the `DynamicSt
 ``` swift
 dynamicStepSlider.setNeedsDisplay()
 ```
+`For getting current Slider value you need to call`
+``` swift
+dynamicStepSlider.getDynamicStepSliderValue()
+```
 By conforming `DynamicStepSliderDelegate ` you'll get the information about when Slider's dragging is started, value changed, canceled, and ended. For better understanding please see the example project.
 to get conforming results simply add this
 ``` swift
