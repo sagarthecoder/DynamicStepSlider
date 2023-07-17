@@ -48,7 +48,10 @@ Create an instance  (in interface builder or programmatically) of the `DynamicSt
     dynamicStepSlider.defaultValue = 0.5 // Slider's default value
 ```
 ### It's also possible to set the above customizations inside Xib
-
+`It's necessary to add the following line when you modify any properties to get expected behavior.`
+``` swift
+dynamicStepSlider.setNeedsDisplay()
+```
 By conforming `DynamicStepSliderDelegate ` you'll get the information about when Slider's dragging is started, value changed, canceled, and ended. For better understanding please see the example project.
 to get conforming results simply add this
 ``` swift
